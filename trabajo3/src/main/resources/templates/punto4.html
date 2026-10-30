@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 4 </title>
+</head>
+<body>
+
+<h1>Punto 4 </h1>
+
+<ul>
+    <li th:each="resultado : ${resultados}">
+        <span th:text="${resultado[0].nombre}"></span>
+        — Conteo:
+        <span th:text="${resultado[0].conteo}"></span>
+        — Total:
+        <strong th:text="${resultado[1]}"></strong>
+    </li>
+</ul>
+
+</body>
+</html>

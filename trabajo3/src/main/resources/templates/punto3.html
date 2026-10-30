@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Punto 3 </title>
+</head>
+<body>
+
+<h1>Punto 3 </h1>
+
+<ul>
+    <li th:each="cultivo : ${cultivosFiltrados}">
+        Nombre: <span th:text="${cultivo.nombre}"></span> |
+        Semillas: <span th:text="${cultivo.cantidadSemillas}"></span> |
+        Ubicación: <span th:text="${cultivo.ubicacion}"></span> |
+        Tipo: <span th:text="${cultivo.tipoCultivo}"></span> |
+        Categoría: <span th:text="${cultivo.categoria}"></span> |
+        Conteo: <span th:text="${cultivo.conteo}"></span>
+    </li>
+</ul>
+
+</body>
+</html>
